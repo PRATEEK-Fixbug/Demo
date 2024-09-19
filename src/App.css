@@ -1,18 +1,56 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: none; /* Remove background color */
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* You can set a background for the flex box */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container {
+  width: 30%;
 }
 
+.flex-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.quote-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* General App styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +62,11 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images.pexels.com/photos/3476312/pexels-photo-3476312.jpeg?cs=srgb&dl=pexels-venelin-dimitrov-1873912-3476312.jpg&fm=jpg');
+
 }
 
 @keyframes App-logo-spin {
@@ -35,16 +76,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
